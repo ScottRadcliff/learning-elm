@@ -40,5 +40,5 @@ view : Model -> Html Msg
 view model =
   div []
     [ input [ placeholder "Text to reverse", onInput Change ] []
-    , div [] [ text (String.reverse model.content) ]
+    , div [] [ text (String.reverse model.content) ] -- Is this data bound? How does it know to update?
     ]
